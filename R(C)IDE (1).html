@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RC Learning Kit Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  #sidebar:hover {
+    width: 16rem;
+  }
+  #sidebar:hover > div {
+    display: block;
+  }
+</style>
+</head>
+<body class="bg-black text-white">
+
+<div class="flex h-screen overflow-hidden">
+  <!-- Sidebar -->
+  <div id="sidebar" class="flex flex-col items-center bg-[#8900FF] w-16 hover:w-64 transition-width duration-300 ease-in-out overflow-hidden">
+    <div class="text-[#FF009D] text-xl font-bold my-4">Logo</div>
+    <div class="hidden">
+      <a href="#" class="text-white py-2 px-4 hover:bg-[#FF009D] transition-colors duration-200">Dashboard</a>
+      <a href="#" class="text-white py-2 px-4 hover:bg-[#FF009D] transition-colors duration-200">IDE</a>
+      <a href="#" class="text-white py-2 px-4 hover:bg-[#FF009D] transition-colors duration-200">Store</a>
+      <a href="#" class="text-white py-2 px-4 hover:bg-[#FF009D] transition-colors duration-200">Community</a>
+      <a href="#" class="text-white py-2 px-4 hover:bg-[#FF009D] transition-colors duration-200">FAQ Help</a>
+      <a href="#" class="text-white py-2 px-4 hover:bg-[#FF009D] transition-colors duration-200">User/Login</a>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="flex-1 p-10">
+    <h1 class="text-4xl font-bold mb-6">Welcome to the RC Learning Kit Dashboard</h1>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="p-4 border border-gray-700 rounded-lg bg-[#FF009D]">
+        <h2 class="text-xl font-semibold mb-3">User Data</h2>
+        <p>Name: Jane Doe</p>
+        <p>Email: jane.doe@example.com</p>
+      </div>
+      <div class="p-4 border border-gray-700 rounded-lg">
+        <h2 class="text-xl font-semibold mb-3">User Metrics</h2>
+        <p>Products Bought: 3</p>
+        <p>Codes Written: 120</p>
+        <p>Codes Tested: 110</p>
+      </div>
+      <div class="col-span-2 p-4 border border-gray-700 rounded-lg">
+        <h2 class="text-xl font-semibold mb-3">IDE</h2>
+        <p>Start coding with our integrated development environment tailored for your RC learning kit.</p>
+        <button class="px-4 py-2 mt-4 bg-[#8900FF] hover:bg-[#FF009D] transition-colors duration-200 rounded">Access IDE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Add any JavaScript you need here
+</script>
+</body>
+</html>
